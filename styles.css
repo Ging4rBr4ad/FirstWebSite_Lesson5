@@ -1,0 +1,42 @@
+.выделенный-параграф{
+    color: rgb(216, 43, 43);
+}
+
+.тело{
+    background-color: rgb(41, 235, 141);
+}
+
+#ilya{
+    color: rgb(216, 43, 150);
+}
+
+.картинка{
+    width: 100px;
+}
+
+ol.список-стран
+{
+    padding-left: 0cm;
+}
+ol.список-стран li::before
+{
+    padding-left: 0cm;
+}
+
+.список-игр
+{
+    list-style-image: url('images/tick2.png');
+}
+
+ol.список-продуктов
+{
+    list-style-type: none;
+    counter-reset: number 0;
+    padding-left: 0%;
+}
+
+ol.список-продуктов li::before
+{
+    content: counter(number) ') ';
+    counter-increment: number 3;
+}
